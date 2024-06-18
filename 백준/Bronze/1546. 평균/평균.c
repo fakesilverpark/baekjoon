@@ -3,15 +3,15 @@
 int main() {
     int n;
     scanf("%d",&n);
-    float num[n], m=0, sum=0;
+    float num, m=0, sum=0;
     for (int i=0;i!=n;i++){
-        scanf("%f",&num[i]);
-        sum+=num[i];
-        if (m<num[i]){
-            m=num[i];
+        scanf("%f",&num);
+        sum+=num;
+        if (m<num){
+            m=num;
         }
     }
-    printf("%.2f",((((sum)/m)*100))/n);
+    printf("%.2f",(((sum)/m)*100)/n);
 
     return 0;
 }
