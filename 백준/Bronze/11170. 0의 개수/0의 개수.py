@@ -1,14 +1,12 @@
 from collections import deque
 
-num=int(input())
-
-for _ in range(num):
-    n, m=map(int,input().split())
+for _ in range(int(input())):
 
     total_cnt=0
+    
+    n, m=map(int,input().split())
 
     for i in range(n,m+1):
-        number=deque(str(i))
-        cnt=number.count('0')
-        total_cnt+=cnt
+        total_cnt+=deque(str(i)).count('0')
+
     print(total_cnt)
