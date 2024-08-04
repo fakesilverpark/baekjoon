@@ -8,7 +8,7 @@ mSet=set()
 for _ in range(m):
     mSet.add(input())
 
-resultSet=list(nSet&mSet)
+resultSet=list(nSet.intersection(mSet))
 resultSet.sort()
 
 print(len(resultSet))
