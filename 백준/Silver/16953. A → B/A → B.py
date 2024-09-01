@@ -11,8 +11,7 @@ def computeUntilA(a, b, cnt):
         if (b % 2 == 0):
             return computeUntilA(a, b//2, cnt+1)
         elif (str(b)[-1] == '1'):
-            b = str(b)
-            return computeUntilA(a, int(b[:len(b)-1]), cnt+1)
+            return computeUntilA(a, b//10, cnt+1)
         else:
             print(-1)
             return 0
