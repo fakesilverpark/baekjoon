@@ -1,6 +1,6 @@
 a, b = map(int, input().split())
 
-def computeUntilA(a, b, cnt):
+def computeUntilA(b, cnt):
     if (b < a):
         print(-1)
         return 0
@@ -9,11 +9,11 @@ def computeUntilA(a, b, cnt):
         return 0
     else:
         if (b % 2 == 0):
-            return computeUntilA(a, b//2, cnt+1)
+            return computeUntilA(b//2, cnt+1)
         elif (str(b)[-1] == '1'):
-            return computeUntilA(a, b//10, cnt+1)
+            return computeUntilA(b//10, cnt+1)
         else:
             print(-1)
             return 0
 
-computeUntilA(a, b, 1)
+computeUntilA(b, 1)
