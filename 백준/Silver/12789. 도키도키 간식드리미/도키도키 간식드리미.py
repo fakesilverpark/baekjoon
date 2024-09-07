@@ -11,10 +11,8 @@ for i in range(1, n+1):
         idx = person.index(i)
         for j in range(idx):
             temp.appendleft(person[j])
-        person = list(person)
-        person = person[idx+1:]
-        person = deque(person)
-    elif (len(temp) != 0 and temp[0] == i):
+        person = deque(list(person)[idx+1:])
+    elif (temp[0] == i):
         temp.popleft()
 
     else:
