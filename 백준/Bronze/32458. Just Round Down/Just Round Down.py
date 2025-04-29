@@ -1,2 +1,1 @@
-import math
-print(math.floor(float(input())))
+print(int(float(input())))
