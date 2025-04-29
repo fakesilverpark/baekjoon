@@ -1,3 +1,2 @@
 import math
-n = math.floor(float(input()))
-print(n)
+print(math.floor(float(input())))
